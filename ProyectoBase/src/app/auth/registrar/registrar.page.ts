@@ -7,11 +7,12 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./registrar.page.scss'],
 })
 export class RegistrarPage implements OnInit {
-  registerForm: FormGroup;
+  registrarForm: FormGroup;
   submitted = false;
 
   constructor(private formBuilder: FormBuilder) {
-    this.registerForm = this.formBuilder.group(
+    
+    this.registrarForm = this.formBuilder.group(
       {
       nombre: ['', Validators.required],
       correo: ['', [Validators.required, Validators.email]],
@@ -20,26 +21,11 @@ export class RegistrarPage implements OnInit {
     });
    }
 
-  ngOnInit() {
-   this.registerForm = this.formBuilder.group({
-      nombre: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      confirmarPassword: ['', Validators.required]
-    },
-    {
-      Validator: this.MustMatch('password', 'confirmarPassword')
-    });
-  }
+  ngOnInit() {}
 
-
-get f() { return this.registerForm.controls; }
+get f() { return this.registrarForm.controls; }
 
   registrar() {
-      console.log(this.registerForm.valid);
-  }
-
-  MustMatch(controlName: string, matchControlName: string) {
-    return true;
+      console.log(this.registrarForm.valid);
   }
 }

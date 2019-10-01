@@ -1,33 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Registrar</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-content>
 <ion-content  color="primary">
-<form [formGroup]="RegistrarForm" (ngSubmit)="registrar()">
+
+<form [formGroup]="registrarForm" (ngSubmit)="registrar()">
+
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div text-center>
-            <h3>Crea tu cuenta!</h3>
+            <h3>¡Crea tu cuenta!</h3>
           </div>
           <div padding>
             <ion-item>
-              <ion-input  forControlName="name" type="text" placeholder="Nombre" ngModel required></ion-input>
-            <div color="error" *ngIf="f.nombre.error">*</div>
+              <ion-input  forControlName="nombre" type="text" placeholder="Nombre" ngModel required></ion-input>
+              <div color="error" *ngIf="f.nombre.errors">*</div>
             </ion-item>
             <ion-item>
-              <ion-input forControlName="email" type="email" placeholder="Correo" ngModel required></ion-input>
-              <div color="error" *ngIf="f.correo.error">*</div>
+              <ion-input forControlName="correo" type="email" placeholder="Correo" ngModel required></ion-input>
+              <div color="error" *ngIf="f.correo.errors">*</div>
             </ion-item>
             <ion-item>
-              <ion-input forControlName="password" type="password" placeholder="Contraseña" ngModel required></ion-input>
-              <div color="error" *ngIf="f.contrasena.error">*</div>
+              <ion-input forControlName="contrasena" type="password" placeholder="Contraseña" ngModel required></ion-input>
+              <div color="error" *ngIf="f.contrasena.errors">*</div>
             </ion-item>
             <ion-item>
-              <ion-input forControlName="confirmarPassword" type="password" placeholder="Repetir contraseña" ngModel required></ion-input>
-              <div color="error" *ngIf="f.confirmarContrasena.error">*</div>
+              <ion-input forControlName="cofirmarContrasena" type="password" placeholder="Repetir contraseña" ngModel required></ion-input>
+              <div color="error" *ngIf="f.confirmarContrasena.errors">*</div>
             </ion-item>
           </div>
           <div padding>
@@ -37,4 +34,6 @@
       </ion-row>
     </ion-grid>
   </form>
+</ion-content>
+
 </ion-content>

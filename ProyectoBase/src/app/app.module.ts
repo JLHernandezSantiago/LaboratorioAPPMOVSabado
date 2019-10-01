@@ -18,8 +18,12 @@ import { RegistrarPage } from './auth/registrar/registrar.page';
 @NgModule({
   declarations: [AppComponent, RegistrarPage],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, ReactiveFormsModule,
-  HttpClientModule],
+  imports: [BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen,
