@@ -1,0 +1,9 @@
+https://blog.flicher.net/ionic-4-user-registration-login-tutorial/
+
+referencia para algun detalle extra que me haya fallado :,3
+
+por alguna razon no carga el usuario, y no entiendo porque
+
+al menos las paginas registrar y login funcionan
+
+sin embargo no se si me falto implementar algo de los servicios del https

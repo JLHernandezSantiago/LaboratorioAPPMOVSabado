@@ -8,12 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RegistrarPage } from './auth/registrar/registrar.page';
-
 
 @NgModule({
   declarations: [AppComponent, RegistrarPage],
@@ -23,7 +21,8 @@ import { RegistrarPage } from './auth/registrar/registrar.page';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule],
+    HttpClientModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
