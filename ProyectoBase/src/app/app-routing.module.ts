@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { RegistrarPage } from './auth/registrar/registrar.page';
+import { LoginPage } from './auth/login/login.page';
+
 
 const routes: Routes = [
   {
@@ -9,7 +11,9 @@ const routes: Routes = [
   },
   { path: 'registro', component: RegistrarPage },
   { path: 'registrar', component: RegistrarPage  },
-  { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },  { path: 'registro', loadChildren: './auth/registro/registro.module#RegistroPageModule' }
+  { path: 'registro', loadChildren: './auth/registro/registro.module#RegistroPageModule' },
+  { path: 'login', component: LoginPage },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' }
 
 ];
 @NgModule({
