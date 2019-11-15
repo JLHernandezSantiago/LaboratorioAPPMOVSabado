@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RegistrarPage } from './registrar.page';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -27,4 +27,4 @@ const routes: Routes = [
   ],
   declarations: [RegistrarPage]
 })
-export class RegistrarPageModule {}
+export class RegistrarPageModule { }

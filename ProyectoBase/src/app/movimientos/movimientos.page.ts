@@ -70,6 +70,7 @@ export class MovimientosPage implements OnInit {
         },
         fecha: '2019-11-08'
       }
+
     ];*/
   }
 

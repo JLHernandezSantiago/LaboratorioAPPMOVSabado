@@ -14,10 +14,10 @@ export class LoginService extends HttpService<Usuario> {
   }
 
   public Login(usuario: Usuario): Observable<Usuario> {
-     const params = new HttpParams()
-     .set('correo', usuario.correo)
-     .set('contrasena', usuario.contrasena);
-     return super.get(params);
+    const params = new HttpParams()
+      .set('correo', usuario.correo)
+      .set('contrasena', usuario.contrasena);
+    return super.get(params);
   }
 
 }
