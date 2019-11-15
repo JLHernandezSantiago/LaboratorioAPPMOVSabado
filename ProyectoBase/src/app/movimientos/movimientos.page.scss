@@ -1,0 +1,51 @@
+ion-title{
+    --color: white;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+ion-list{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ion-item{
+    --background: #15D0B3;
+    --color: #fff;
+    --padding-end: 0px;
+    --inner-padding-end: 0px;
+}
+
+ion-card{
+    width: 100% !important;
+  }
+
+
+.cardItems{
+    color: #fff;
+    font-family: 'Nunito';
+}
+
+ion-fab-button{
+    --color: white;
+}
+
+.descripcion{
+    font-family: 'Nunito';
+    font-size: 16pt;
+}
+
+.cuenta{
+    font-family: 'Nunito';
+    font-size: 12pt;
+}
+
+.etiqueta{
+    font-family: 'Nunito';
+    font-size: 14pt;
+}
+
+.cantidad{
+    font-size: 18pt;
+}

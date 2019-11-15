@@ -1,0 +1,40 @@
+ion-title{
+    --color: white;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+ion-input{
+    font-family: 'Nunito';
+    --placeholder-color: white; 
+    --placeholder-opacity: 100;
+}
+
+ion-item{
+    --background: #15D0B3;
+    --color: #fff;
+    --border-color: white;
+}
+
+ion-button{
+    color:white;
+}
+
+ion-content{
+    --padding-bottom: 30pt;
+    --padding-end: 30pt;
+    --padding-start: 30pt;
+    --padding-top: 30pt;
+}
+
+.tipo{
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+}
+
+.botones{
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Resumen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary" padding>
+
+  <div class="centered">
+    <ion-button shape="round" (click)="displayChartIngresos()">
+      <ion-label> Ingresos </ion-label>
+    </ion-button>
+
+    <ion-button shape="round" (click)="displayChartEgresos()">
+      <ion-label> Egresos </ion-label>
+    </ion-button>
+  </div>
+  <br><br><br>
+  <canvas #doughnutCanvas> </canvas>
+
+
+</ion-content>

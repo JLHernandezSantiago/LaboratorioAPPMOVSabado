@@ -13,7 +13,13 @@ const routes: Routes = [
   { path: 'registrar', component: RegistrarPage  },
   { path: 'registro', loadChildren: './auth/registro/registro.module#RegistroPageModule' },
   { path: 'login', component: LoginPage },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' }
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },  { path: 'modals', loadChildren: './modals/modals.module#ModalsPageModule' },
+  { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },
+  { path: 'movimientos', loadChildren: './movimientos/movimientos.module#MovimientosPageModule' },
+  { path: 'resumen-chart', loadChildren: './resumen-chart/resumen-chart.module#ResumenChartPageModule' },
+  { path: 'agregar-cuenta', loadChildren: './agregar-cuenta/agregar-cuenta.module#AgregarCuentaPageModule' },
+  { path: 'agregar-movimiento', loadChildren: './agregar-movimiento/agregar-movimiento.module#AgregarMovimientoPageModule' }
+
 
 ];
 @NgModule({
