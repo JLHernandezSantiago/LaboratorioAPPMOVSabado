@@ -17,10 +17,10 @@ export class LoginPage implements OnInit {
   submitted = false;
   usuario: Usuario;
   constructor(private formBuilder: FormBuilder,
-    private loginService: LoginService,
-    private alertController: AlertController,
-    private router: Router,
-    @Inject(LOCAL_STORAGE) private storage: StorageService) {
+              private loginService: LoginService,
+              private alertController: AlertController,
+              private router: Router,
+              @Inject(LOCAL_STORAGE) private storage: StorageService) {
 
     this.loginForm = this.formBuilder.group({
       correo: ['', [Validators.required, Validators.email]],
@@ -43,7 +43,7 @@ export class LoginPage implements OnInit {
         this.loginCorrecto();
       },
       error => {
-        this.error(error.error.mensaje)
+        this.error(error.error.mensaje);
       }
     );
   }

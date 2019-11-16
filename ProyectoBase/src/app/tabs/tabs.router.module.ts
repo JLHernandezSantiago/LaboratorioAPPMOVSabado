@@ -7,7 +7,7 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children: [
-      {
+     {
         path: 'cuenta',
         children: [
           {
@@ -18,35 +18,35 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab2',
+        path: 'movimientos',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+              import('../movimientos/movimientos.module').then(m => m.MovimientosPageModule)
           }
         ]
       },
       {
-        path: 'tab3',
+        path: 'resumen-chart',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+              import('../resumen-chart/resumen-chart.module').then(m => m.ResumenChartPageModule)
           }
         ]
       },
       {
         path: '',
-        redirectTo: '/tabs/tab2',
+        redirectTo: '/cuenta',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab2',
+    redirectTo: '/cuenta',
     pathMatch: 'full'
   }
 ];

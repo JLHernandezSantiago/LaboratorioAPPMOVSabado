@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'login', component: LoginPage },
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'cuenta', loadChildren: './cuenta/cuenta.module#CuentaPageModule' },
-  { path: 'movimientos', loadChildren: './movimientos/movimientos.module#MovimientosPageModule' },  { path: 'resumen-chart', loadChildren: './resumen-chart/resumen-chart.module#ResumenChartPageModule' },
+  { path: 'movimientos', loadChildren: './movimientos/movimientos.module#MovimientosPageModule' },
+  { path: 'resumen-chart', loadChildren: './resumen-chart/resumen-chart.module#ResumenChartPageModule' },
 
 
 
