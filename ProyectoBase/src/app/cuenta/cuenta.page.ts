@@ -14,10 +14,10 @@ export class CuentaPage implements OnInit {
 
   ngOnInit() {
     this.cuentas = [
-      { Cantidad: 1555.00, Nombre: 'Crédito Banorte' },
-      { Cantidad: 1.50, Nombre: 'Débito Banregio' },
-      { Cantidad: -1555.00, Nombre: 'Crédito BBVA' },
-      { Cantidad: 500.00, Nombre: 'Débito Banamex' },
+      { Cantidad: 1750.90, Nombre: 'Crédito Banorte' },
+      { Cantidad: 90.50, Nombre: 'Credito Banregio' },
+      { Cantidad: -2700.00, Nombre: 'Crédito BBVA' },
+      { Cantidad: 1500.00, Nombre: 'Débito Banamex' },
     ];
   }
 

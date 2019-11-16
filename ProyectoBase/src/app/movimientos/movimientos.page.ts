@@ -19,59 +19,42 @@ export class MovimientosPage implements OnInit {
   ngOnInit() {
     this.movimientos = [
       {
-        Descripcion: '7-Eleven Papitas',
-        Cantidad: '-18.00',
+        Descripcion: '7-Eleven Agua',
+        Cantidad: '-13.00',
         Tipo: '2',
         Cuenta: 'Crédito Banorte',
         Etiqueta: 'Comida'
       },
       {
         Descripcion: 'Pago agua',
-        Cantidad: '-360.00',
+        Cantidad: '-256.00',
         Tipo: '2',
         Cuenta: 'Crédito Banorte',
         Etiqueta: 'Hogar'
       },
       {
         Descripcion: 'Quincena',
-        Cantidad: '+7,500.00',
+        Cantidad: '+9,800.00',
         Tipo: '2',
-        Cuenta: 'Débito Banregio',
+        Cuenta: 'Credito Banregio',
         Etiqueta: 'Sueldo'
       },
       {
         Descripcion: 'Colegiatura',
-        Cantidad: '-2,500.00',
+        Cantidad: '-3,750.00',
         Tipo: '2',
         Cuenta: 'Débito Banamex',
         Etiqueta: 'Educación'
       },
       {
         Descripcion: 'Pago Cuota Interna',
-        Cantidad: '-3650.00',
+        Cantidad: '-4000.00',
         Tipo: '2',
-        Cuenta: 'Débito Banregio',
+        Cuenta: 'credito Banregio',
         Etiqueta: 'Educación'
       }
 
     ];
-    /*this.movimientos = [
-      {
-        descripcion: '7-Eleven',
-        cantidad: '-18',
-        tipo: '2', //1 - Ingreso, 2 - Egreso
-        cuenta: {
-          nombre: 'Crédito Banorte',
-          id: 1
-        },
-        etiqueta: {
-          id: 1,
-          descripcion: 'Comida'
-        },
-        fecha: '2019-11-08'
-      }
-
-    ];*/
   }
 
   async abrirModal() {
