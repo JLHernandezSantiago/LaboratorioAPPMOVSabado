@@ -1,5 +1,7 @@
 {
   "name": "ProyectoBase",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
