@@ -1,0 +1,61 @@
+<ion-toolbar color="primary">
+  <ion-title>Agregar Movimiento</ion-title>
+</ion-toolbar>
+
+<ion-content color="primary">
+
+  <ion-item>
+    <ion-label stacked>Descripción</ion-label>
+    <ion-input type="text" text-right id="input" [(ngModel)]="Descripcion"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Cantidad</ion-label>
+    <ion-input type="text" text-right id="input" [(ngModel)]="Cantidad"></ion-input>
+  </ion-item>
+
+  <ion-item class="tipo">
+    <ion-label stacked>Tipo</ion-label>
+    <ion-select [(ngModel)]="Tipo">
+      <ion-select-option value="1"> Ingreso (1) </ion-select-option>
+      <ion-select-option value="2"> Egreso (2) </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Cuenta</ion-label>
+    <ion-select [(ngModel)]="Cuenta">
+      <ion-select-option value="1"> Crédito Banorte (1) </ion-select-option>
+      <ion-select-option value="2"> Débito Banregio (2) </ion-select-option>
+      <ion-select-option value="3"> Crédito BBVA (3) </ion-select-option>
+      <ion-select-option value="4"> Débito Banamex (4) </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Etiqueta </ion-label>
+    <ion-select [(ngModel)]="Etiqueta">
+      <ion-select-option value="1"> Deuda (1) </ion-select-option>
+      <ion-select-option value="2"> Hogar (2) </ion-select-option>
+      <ion-select-option value="3"> Alimento (3) </ion-select-option>
+      <ion-select-option value="4"> Entretenimiento (4) </ion-select-option>
+      <ion-select-option value="5"> Transporte (5) </ion-select-option>
+      <ion-select-option value="6"> Educación (6) </ion-select-option>
+      <ion-select-option value="7"> Regalos (7) </ion-select-option>
+      <ion-select-option value="8"> Viajes (8) </ion-select-option>
+      <ion-select-option value="9"> Ingresos (9) </ion-select-option>
+      <ion-select-option value="10"> Ropa y Calzado (10) </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <div class="botones">
+
+    <ion-button (click)="salirModal()">Cancelar</ion-button>
+
+    <ion-button (click)="subirMovimiento()">Agregar</ion-button>
+
+  </div>
+
+
+
+</ion-content>

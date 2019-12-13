@@ -5,22 +5,24 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegistroPage } from './registro.page';
+import { CuentaPage } from './cuenta.page';
+import { AgregarCuentaPageModule } from './agregar-cuenta/agregar-cuenta.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: RegistroPage
+    component: CuentaPage
   }
 ];
 
 @NgModule({
   imports: [
+    AgregarCuentaPageModule,
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [RegistroPage]
+  declarations: [CuentaPage]
 })
-export class RegistroPageModule {}
+export class CuentaPageModule { }

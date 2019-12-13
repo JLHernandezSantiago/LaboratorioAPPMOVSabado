@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class RegistrarService extends HttpService<Usuario> {
+export class RegistrarService extends HttpService<Usuario>{
 
   constructor(protected http: HttpClient) {
     super(http, Usuario.endPoint);
@@ -20,5 +20,4 @@ export class RegistrarService extends HttpService<Usuario> {
   public save(usuario: Usuario): Observable<Usuario> {
     return super.save(usuario);
   }
-
 }

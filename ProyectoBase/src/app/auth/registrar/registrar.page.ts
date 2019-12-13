@@ -16,19 +16,19 @@ export class RegistrarPage implements OnInit {
   submitted = false;
   usuario: Usuario;
   constructor(private formBuilder: FormBuilder,
-              private registrarService: RegistrarService,
-              private alertController: AlertController,
-              private router: Router) {
+    private registrarService: RegistrarService,
+    private alertController: AlertController,
+    private router: Router) {
 
-              this.registrarForm = this.formBuilder.group({
-                nombre: ['', Validators.required],
-                correo: ['', [Validators.required, Validators.email]],
-                contrasena: ['', [Validators.required, Validators.minLength(6)]],
-                confirmacionContrasena: ['', Validators.required]
-                });
- }
+    this.registrarForm = this.formBuilder.group({
+      nombre: ['', Validators.required],
+      correo: ['', [Validators.required, Validators.email]],
+      contrasena: ['', [Validators.required, Validators.minLength(6)]],
+      confirmacionContrasena: ['', Validators.required]
+    });
+  }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   get f() { return this.registrarForm.controls; }
 
@@ -44,7 +44,7 @@ export class RegistrarPage implements OnInit {
         this.cuentaCreada();
       },
       error => {
-        this.error(error.error.mensaje);
+        this.error(error.error.mensaje)
       }
     );
   }

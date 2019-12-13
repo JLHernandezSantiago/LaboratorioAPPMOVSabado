@@ -1,3 +1,11 @@
+ion-title{
+    --color: white;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 18pt;
+
+}
+
 ion-item{
     --background: #15D0B3;
     --color: #fff;
@@ -11,6 +19,14 @@ ion-input{
 
 }
 
+.botonCerrar{
+    --background: white;
+    --opacity: 100;	
+    font-family: 'Nunito';
+    font-weight: 900;
+    color: #15D0B3;
+}
+
 ion-button{
     --background: white;
     --opacity: 100;	
@@ -19,37 +35,13 @@ ion-button{
     color: #15D0B3;
 }
 
-.divButton {
-    padding-top: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Nunito';
-    font-weight: 1000;
-    color: white;
-    font-size: 50pt;
-    padding-top: 20px;
-    padding-bottom: 50px;
-}
-
 h3{
     color: white;
     font-weight: bold;
     font-family: 'Nunito';
-    font-size: 16pt;
 }
 
-a{
-    color: #fff;
+.divButton {
+    padding-top: 40px;
     text-align: center;
-    align-content: center;
-}
-
-.registroText {
-    color: white;
-    width:50%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 30px;
 }
